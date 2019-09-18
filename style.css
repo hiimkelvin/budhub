@@ -1,0 +1,584 @@
+/* ------------------------- */
+/* About - Mission  */
+/* --------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+    font-family: 'Alegreya Sans';
+    overflow-x: hidden;
+    font-weight:lighter;
+  }
+  
+  
+  /* about - beginning */
+
+  
+  
+  .intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('BHPics/lifestyle5.JPG');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    letter-spacing: .2em;
+    font-size: 2.5em;
+  }
+  
+  
+  /* mission statement */
+  
+  .grid>* {
+    padding: 30px;
+  }
+  
+  .grid {
+    display: grid;
+    margin: 0 auto;
+    /* same as 1fr 1fr 1fr 1fr */
+    grid-template-columns: repeat(4, 1fr);
+    /* minimum row height is 100px, and resize depending on content inside the grid - auto */
+    grid-auto-rows: minmax(250px, auto);
+  }
+  
+  .mission_statement {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: black;
+    text-align: left;
+    font-weight: lighter;
+    letter-spacing: .1em;
+  }
+  
+  .mission {
+    padding: 2em;
+    outline: 2px solid #60E1F6;
+    outline-offset: .5em;
+    height: 100%;
+  }
+  
+  .mission h3 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #60E1F6;
+    font-weight: bold;
+  }
+  
+  .mission h4 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #60E1F6;
+    font-weight: bold;
+  }
+  
+  .mission p {
+    margin-bottom: 3em;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .mission a {
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #60E1F6;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  
+  .mission a:hover {
+    background: #60E1F6;
+    color: white;
+  }
+  
+  .pic1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: url("BHPics/lifestyle1.JPG");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .word {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: #60E1F6;
+  }
+  
+  .inner_text {
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: .1em;
+    font-weight: lighter;
+  }
+  
+  .inner_text h3 {
+    font-weight: 300;
+    font-size: 1.2em;
+  }
+  
+  .inner_text p {
+    font-size: .7em;
+    color: black;
+  }
+  
+  .pic2 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background: url("BHPics/lifestyle7.JPG");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .pic3 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background: url("BHPics/lifestyle6.JPG");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  /* ------------------------- */
+  /* About - Products  */
+  /* --------------------------*/
+  
+  
+  
+  .grid2 {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+  }
+  
+  .bike,
+  .essentials,
+  .repair {
+    color: white;
+    text-align: left;
+    font-weight: lighter;
+    /* letter-spacing: .2em; */
+    line-height: 2em;
+    /* position:relative */
+  }
+  
+  .service_text {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    font-weight: lighter;
+    overflow:hidden;
+  }
+  
+  /* .service_text p:after {
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    border-radius: 1px;
+    background-color: #fff;
+    margin-top: 2em;
+  } */
+  
+  .service_text h3 {
+    font-size: 1.5em;
+  }
+  
+  .service_text p {
+    font-size: 2.5em;
+    color: #00ffff;
+    overflow:hidden;
+  }
+  
+  .bike {
+    grid-column: 1/2;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/about_two/work4.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .essentials {
+    grid-column: 2/3;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/about_two/work1.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .repair {
+    grid-column: 3/4;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/about_two/work3.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  
+  /* -------------------------- */
+  /* About - Contact Form  */
+  /* -------------------------- */
+  
+  #sub_text {
+    font-weight: lighter;
+    margin-bottom: 1em;
+  }
+  
+  #sub_text h3{
+    font-weight:300;
+    margin-top:1.5em;
+  }
+  
+  #sub_text p {
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .submit {
+    clear: both;
+    width: 100%;
+  }
+  
+  .submission {
+    text-align: left;
+    font-weight: lighter;
+  }
+  
+  form {
+    overflow: hidden;
+    width: 70%;
+  }
+  
+  .error,
+  .message {
+    margin-bottom:1em;
+  }
+  
+  .error{
+    color: #e62739;
+  }
+  
+  .message{
+    color: #49C5B6;
+  }
+  
+  input {
+    background-color: #f1f1f1;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  input[type=submit] {
+    float: left;
+    border: 2px solid #60E1F6;
+    color: #fff;
+    background-color: #60E1F6;
+    padding: 1em 2em;
+    font-size: .8em;
+    font-weight:300;
+    cursor: pointer;
+  }
+  
+  input[type=text],
+  input[type=email],
+  input[type=textarea] {
+    width: 100%;
+    clear: both;
+    border: none;
+    border-bottom: 2px solid #60E1F6;
+    margin-bottom: 1em;
+    font-size: 18px;
+    -webkit-transition: border 300ms ease-out;
+    -moz-transition: border 300ms ease-out;
+    -o-transition: border 300ms ease-out;
+  }
+  
+  input[type=text]:hover,
+  input[type=email]:hover,
+  input[type=textarea]:hover {
+    border-bottom: 2px solid black;
+  }
+  
+  input[type=textarea] {
+    height: 7em;
+  }
+  
+  
+  /* ------------------------- */
+  /* About - Contact Info */
+  /* --------------------------*/
+  
+  
+  .info {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: #323846;
+    color: white;
+  }
+  
+  .info_text{
+    text-align:left;
+    margin-left:3em;
+    color:white;
+    font-weight: bold;
+  }
+  
+  .info_text h3{
+    margin-top:2em;
+  }
+  
+  #first_p{
+    font-size:2.5em;
+    margin-bottom:1em;
+  }
+  
+  #second_p{
+    font-weight:100;
+    margin-bottom: .5em;
+  }
+  
+  #third_p{
+    color:#00ffff;
+    font-size:2em;
+  }
+  
+  .info_text li{
+    display:inline-block;
+    margin-right:1.5em;
+    font-size: 1em;
+  }
+  
+  .info_icon{
+    text-decoration:none;
+    color:white;
+    width: 100px;
+  }
+  
+  .info_icon:hover{
+    color:#60E1F6;
+  }
+  
+  ul{
+    text-decoration:none;
+  }
+  
+  
+  
+  .submission {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  
+  /* ------------------------- */
+  /* About End  */
+  /* --------------------------*/
+  
+  
+  /* Content Ending */
+  
+  #content_end {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("BHPics/lifestyle2.JPG");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 75vh;
+  }
+  
+  #end_text {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    height:50%;
+  }
+  
+  #end_text img {
+    width: 60px;
+  }
+  
+  #end_text p {
+    font-weight: lighter;
+    font-size: 1em;
+  }
+  
+  #end_text h2 {
+    font-size: 2em;
+    margin: .5em 0 1em 0;
+    letter-spacing: .2em;
+  }
+  
+  #end_text a {
+    padding: .5em 1em;
+    border: 1px solid #00ffff;
+    border-bottom: 1px solid #00ffff;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .2em;
+    font-weight:300;
+  }
+  
+  #end_text a:hover {
+    background: #00ffff;
+  }
+  
+  @media(max-width:420px) {
+    .intro{
+        height:100vh;
+    }
+  
+    #content_end {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/about_two/last_mobile.png");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 75vh;
+    }
+    #end_text{
+      overflow:hidden;
+    }
+  
+    #end_text h2 {
+        font-size: 1.6em;
+        letter-spacing: .1em;
+        margin-bottom: 2em;
+    }
+    #end_text img{
+      width:47px;
+    }
+  
+    .info_text li{
+      margin:0;
+    }
+  
+  
+  }
+  
+  
+  @media(max-width:768px) {
+    .info_text{
+      margin-left:0;
+    }
+    .grid,
+    .grid2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .content {
+        font-size: 1.5em;
+    }
+    .mission_statement,
+    .info {
+        grid-row: 1/3;
+    }
+    .mission {
+        padding: 2em;
+        text-align:center;
+    }
+    .mission h3 {
+        font-size: 2em;
+    }
+    .mission h4 {
+        font-size: 1em;
+    }
+    .inner_text h3 {
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+    .mission_statement,
+    .bike,
+    .essentials,
+    .repair,
+    .meet,
+    .info,
+    .submission {
+        grid-column: 1/3;
+    }
+    .bike,
+    .meet {
+        grid-row: 1/2;
+    }
+    .essentials,
+    .pic4,
+    .pic5 {
+        grid-row: 2/3;
+    }
+    .pic1,
+    .pic2,
+    .repair,
+    .pic7,
+    .pic6 {
+        grid-row: 3/4;
+    }
+    .pic1,
+    .word,
+    .pic8,
+    .pic6,
+    .pic4 {
+        grid-column: 1/2;
+    }
+    .pic2,
+    .pic3,
+    .join,
+    .pic7,
+    .pic5 {
+        grid-column: 2/3;
+    }
+    .word,
+    .pic3,
+    .pic8,
+    .join {
+        grid-row: 4/5;
+    }
+  
+    .profile{
+        display:block;
+    }
+  
+    .pic4,
+    .pic5,
+    .pic6,
+    .pic7,
+    .pic8{
+        -webkit-filter:grayscale(0);
+        filter:grayscale(0);
+    }
+  
+    #meet_text{
+        margin-left:0;
+    }
+  
+    .info_text {
+        text-align:left;
+        margin:0;
+    }
+  
+    .submission {
+        grid-row: 3/5;
+    }
+    form {
+        width: 80%;
+    }
+  }
