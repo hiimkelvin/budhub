@@ -14,9 +14,37 @@
     </head>
     
     <body>
+<!-- Mobile Bar & Menu Icon -->
+<input type="checkbox" class="menu-toggle" id="menu-toggle">
+<div class="mobile-bar">
+  <img src="logo.jpg" alt="logo" class="logo">
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+  </label>
+</div>
 
+<!-- Header -->
+<header class="nav-bar">
+  <img src="logo.jpg" alt="logo" class="logo">
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="https://weedmaps.com/deliveries/budhub-deliveries">Products</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/gobudhub"><i class="ion-social-instagram"></i></a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-        <header class="intro">
+          <header class="intro">
             <div class="content">
               <h3>meet the</h3>
               <h1>community</h1>
@@ -26,6 +54,7 @@
           <!-- mission statement -->
           <section class="grid">
             <div class="mission_statement">
+              <div id="about"></div>
               <div class="mission">
                 <h3>About Us</h3>
                 <h4>Cannabis Delivery, Made Simple.</h4>
@@ -34,36 +63,9 @@
               </div>
             </div>
             <div class="pic1"></div>
-            <div class="word">
-              <div class="inner_text">
-                <h3>Can Insert Any Text Here</h3>
-                <p>Can Insert Any Text Here</p>
-              </div>
-            </div>
+            <div class="pic10"></div>
             <div class="pic2"></div>
             <div class="pic3"></div>
-          </section>
-          
-          <!-- Services  -->
-          <section class="grid2">
-            <div class="bike">
-              <div class="service_text">
-                <h3>Add anything here</h3>
-                <p>Title</p>
-              </div>
-            </div>
-            <div class="essentials">
-              <div class="service_text">
-                <h3>Add anything here</h3>
-                <p>Title</p>
-              </div>
-            </div>
-            <div class="repair">
-              <div class="service_text">
-                <h3>Add anything here</h3>
-                <p>Title</p>
-              </div>
-            </div>
           </section>
           
           <!-- Contact Section -->
@@ -100,7 +102,7 @@
                     <p>(949)565-5850</p>
                   </li>
                 </ul>
-
+                <p id="third_p">Email</p>
                 <ul>
                   <li>
                     <a class="info_icon" href="hello@gobudhub.com">
@@ -150,10 +152,35 @@
               <h2>
                 <p>pick up some gear</p>
               </h2>
-              <a routerLink="/shop">Shop</a>
+              <a routerLink="/shop">Shop Is Coming Soon!</a>
               <br>
             </div>
           </section>
+
+<!-- Footer -->
+
+<footer>
+  <div class="container">
+
+      <div class="contacts">
+          <h2>contact us</h2>
+          <a href="hello@gobudhub.com">hello@gobudhub.com</a>
+          <br>
+          <p>(213)806-9508</p>
+      </div>
+      <div class="social">
+          <h2>follow us</h2>
+          <ul>
+              <li>
+                  <a href="https://www.instagram.com/gobudhub">
+                      <i class="ion-social-instagram"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <p id="copyright">&copy; 2019 Budhub Delivery. All Rights Reserved</p>
+</footer>
 
 
     </body>
